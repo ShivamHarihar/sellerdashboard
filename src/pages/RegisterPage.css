@@ -615,6 +615,21 @@
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+    .register-layout {
+        grid-template-columns: 340px 1fr;
+        gap: 32px;
+    }
+
+    .register-sidebar {
+        padding: 28px 20px;
+    }
+
+    .register-form-card {
+        padding: 32px;
+    }
+}
+
 @media (max-width: 1024px) {
     .register-layout {
         grid-template-columns: 1fr;
@@ -623,6 +638,39 @@
     .register-sidebar {
         position: relative;
         top: 0;
+        padding: 24px 20px;
+    }
+
+    .register-sidebar h2 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    /* Horizontal progress on tablet */
+    .progress-steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    .progress-step-wrapper {
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .progress-step {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .step-connector {
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        flex: 1;
     }
 
     .register-footer .footer-content {
@@ -630,35 +678,277 @@
     }
 }
 
-@media (max-width: 640px) {
-    .otp-inputs {
-        gap: 8px;
-    }
-
-    .otp-input {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .register-footer .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        flex-direction: column;
-    }
-
-    .button-group {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .register-content {
+        padding: 24px 0;
     }
 
     .register-form-card {
         padding: 24px;
+        border-radius: 12px;
     }
 
+    .register-form-card h3 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .register-form {
+        gap: 20px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 11px 14px;
+        font-size: 14px;
+    }
+
+    /* File upload */
+    .file-upload-area {
+        padding: 20px;
+    }
+
+    .upload-icon {
+        font-size: 28px;
+    }
+
+    /* Button group */
+    .button-group {
+        gap: 12px;
+    }
+
+    /* Support card */
     .support-card-inline {
         flex-direction: column;
         text-align: center;
+        padding: 24px;
+    }
+
+    .support-content-inline h4 {
+        font-size: 18px;
+    }
+
+    .support-content-inline p {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .register-footer {
+        padding: 32px 0 0;
+    }
+
+    .register-footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-bottom {
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .register-header {
+        padding: 12px 0;
+    }
+
+    .register-header .logo-text {
+        font-size: 20px;
+    }
+
+    .register-sidebar {
+        padding: 20px 16px;
+    }
+
+    .register-sidebar h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .requirements-section h3 {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .step2-requirement-item p,
+    .req-content p {
+        font-size: 11px;
+    }
+
+    .register-form-card {
+        padding: 20px;
+    }
+
+    .otp-inputs {
+        gap: 6px;
+    }
+
+    .otp-input {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button-group {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+
+    .phone-input-group .country-code {
+        padding: 11px 12px;
+        font-size: 14px;
+    }
+
+    .send-otp-btn,
+    .verify-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .pin-input-group {
+        gap: 8px;
+    }
+
+    /* Progress steps - compact on mobile */
+    .progress-steps {
+        margin-bottom: 24px;
+    }
+
+    .step-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .step-label {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-content {
+        padding: 16px 0;
+    }
+
+    .register-form-card {
+        padding: 16px;
+    }
+
+    .register-form-card h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .register-form {
+        gap: 16px;
+    }
+
+    .form-group {
+        gap: 6px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .otp-inputs {
+        gap: 4px;
+    }
+
+    .otp-input {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+
+    .file-upload-area {
+        padding: 16px;
+    }
+
+    .file-upload-label {
+        gap: 6px;
+        font-size: 13px;
+    }
+
+    .upload-icon {
+        font-size: 24px;
+    }
+
+    .file-size-hint {
+        font-size: 11px;
+    }
+
+    .support-card-inline {
+        padding: 20px;
+    }
+
+    .support-icon-inline svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .support-content-inline h4 {
+        font-size: 16px;
+    }
+
+    .support-content-inline p {
+        font-size: 12px;
+    }
+
+    .register-footer .footer-column h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .register-footer .footer-column a,
+    .register-footer .footer-address,
+    .register-footer .footer-phone {
+        font-size: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
+    /* Compact sidebar on very small screens */
+    .register-sidebar {
+        background: transparent;
+        padding: 16px 0;
+    }
+
+    .requirements-section {
+        display: none;
+    }
+
+    .progress-steps {
+        background: #1E3A5F;
+        padding: 16px;
+        border-radius: 12px;
+        margin-bottom: 16px;
     }
 }
