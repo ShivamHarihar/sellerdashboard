@@ -1,0 +1,27 @@
+.about-section {
+    background: var(--white);
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    color: var(--dark-navy);
+}
+
+.about-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 28px;
+    }
+
+    .about-description {
+        font-size: 14px;
+    }
+}
